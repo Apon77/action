@@ -10,3 +10,10 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+        df -h
+        free -h
+        nproc
+        ping 8.8.8.8 -c 5
+        whoami
+        sudo whoami
+
