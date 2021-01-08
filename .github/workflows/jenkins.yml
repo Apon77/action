@@ -36,5 +36,12 @@ jobs:
           echo ${{ secrets.PERUSECRET }}
           echo Lets check from env:
           echo $ME_IS_THE_SECRET
+          
+          if [[ $ME_IS_THE_SECRET == *"pro"* ]]; then
+          echo I got you noob secret
+          fi
+
+
+          
         env: 
           ME_IS_THE_SECRET: ${{ secrets.PERUSECRET }}
